@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+##retorna as disciplinas direto no navegador
+Route::get('/', 'DisciplinaController@index'); 
+
+
+
+##Crias as rotas para todos os métodos do Disciplina Controller (show, create, store ....)
+Route::resource('disciplinas', 'DisciplinaController');
