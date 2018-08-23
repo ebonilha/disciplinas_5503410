@@ -47,7 +47,8 @@ class DisciplinaController extends Controller
      */
     public function show(Disciplina $disciplina)
     {
-        //
+        //$dados = Disciplina::find($disciplina);
+        return view('disciplinas.show', compact('disciplina'));
     }
 
     /**
