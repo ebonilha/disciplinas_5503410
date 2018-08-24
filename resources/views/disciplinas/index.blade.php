@@ -7,3 +7,5 @@
 		</li>
 	@endforeach
 </ul>
+
+<a href="/disciplinas/create">Cadastrar disciplina</a>
