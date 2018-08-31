@@ -18,3 +18,9 @@ Route::get('/', 'DisciplinaController@index');
 
 ##Crias as rotas para todos os métodos do Disciplina Controller (show, create, store ....)
 Route::resource('disciplinas', 'DisciplinaController');
+
+##Rota para insercao de Turmas em Disciplinas
+Route::get('/disciplinas/{disciplina_id}/turmas/create', 'DisciplinaController@createTurma');
+
+##Rota para salvar a turma
+Route::post('/disciplinas/{disciplina}/turmas', 'DisciplinaController@storeTurma');
