@@ -20,8 +20,8 @@ class CreateTurmasTable extends Migration
             $table->date('inicio');
             $table->date('fim');
             $table->text('bibliografia')->nullable();
-            $table->integer('discíplina_id')->unsigned();
-            $table->foreign('discíplina_id')->references('id')->on('disciplinas');
+            $table->integer('disciplina_id')->unsigned();
+            $table->foreign('disciplina_id')->references('id')->on('disciplinas');
         });
     }
 
