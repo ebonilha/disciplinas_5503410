@@ -24,3 +24,6 @@ Route::get('/disciplinas/{disciplina_id}/turmas/create', 'DisciplinaController@c
 
 ##Rota para salvar a turma
 Route::post('/disciplinas/{disciplina}/turmas', 'DisciplinaController@storeTurma');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
